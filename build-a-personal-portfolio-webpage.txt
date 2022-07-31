@@ -1,0 +1,386 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viweport" content="width=width-device, initial-scale=1.0"/>
+    <title>Personal Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="about">
+      <nav id="navbar">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+          </nav>
+          <section id="welcome-section">
+          <div id="welcom-section" class="container">
+            <h1>Hey I am Asmaa Madyan</h1>
+            <p><em>a front-end web developer</em></p>
+            </section>
+            </header>
+
+     <section id="projects">
+    <div class="project-tile">
+    
+      <h1 id="caption">"These are some of my projects"</h1><br>
+      <div id="bottom-line"></div>
+      <div class="projects">
+        <div class="box">
+          <a target="_blank" href="https://codepen.io/somamadyan9/full/MWVrmjo">
+            <img src="https://i.im.ge/2022/07/31/FN4so4.Screenshot-2022-07-31-132344.md.jpg" alt="project-img" class="project-img">
+            <p>
+              <span class="code">&lt;</span>
+              Tribute Page
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+        </div>
+
+        <div class="box">
+           <a target="_blank" href="https://codepen.io/somamadyan9/full/GRxymQg">
+  <img src="https://i.im.ge/2022/07/31/FNHbND.Screenshot-2022-07-31-131155.md.jpg" alt="project-img" class="project-img">
+            <p>
+              <span class="code">&lt;</span>
+              Survey Form
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+        </div>
+
+        <div class="box">
+           <a target="_blank" href="https://codepen.io/somamadyan9/full/WNzdjKj">
+  <img src="https://i.im.ge/2022/07/31/FN4OHh.Screenshot-2022-07-31-132104.md.jpg" alt="project-img" class="project-img">
+            <p>
+              <span class="code">&lt;</span>
+              Documentation Page
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+        </div>
+
+        <div target="_blank" class="box">
+          <a target="_blank" href="https://codepen.io/somamadyan9/full/vYRpmQE">
+  <img src="https://i.im.ge/2022/07/31/FN47bq.Screenshot-2022-07-31-132749.md.jpg" alt="project-img" class="project-img">
+            <p>
+              <span class="code">&lt;</span>
+              Landing Page
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+        </div>
+</section>
+        
+  <!-- CONTACT SECTION -->
+      <section id="contact">
+    <div class="container">
+      <h1>Let's work together...</h1>
+      <p>Need help with your project? Just ask!</p>
+      <div class="social">
+        <div>
+          <a target="_blank" href="https://www.facebook.com/soma.madyan.5">
+            <i class="fab fa-facebook fa-1x"></i>
+            Facebook
+          </a>
+          <a id="profile-link" target="_blank" href="https://github.com/asmaamadyan">
+            <i class="fab fa-github fa-1x"></i>
+            Github
+          </a>
+          <a target="_blank" href="https://twitter.com/somamadyan">
+            <i class="fab fa-twitter fa-1x"></i>
+            Twitter
+          </a>
+          <a href="somamadyan9@gmail.com">
+            <i class="fas fa-envelope-open-text fa-1x"></i>
+            Send a mail
+          </a>
+          <a href="#">
+            <i class="fas fa-phone fa-1x"></i>
+            Call Me
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER SECTION -->
+  <footer id="main-footer">
+    <div class="container">
+      <p>&copy; Copyright Free</p>
+      
+    </div>
+  </footer>
+</body>
+
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+/* VARIABLES */
+:root {
+  --primary-color: rgb(230,10,10);
+  --secondary-color:#44586e;
+}
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.54;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+.btn {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 4rem;
+  text-align: center;
+  display: inline-block;
+  padding: .6rem 1.5rem;
+  border-radius: 3px;
+  background-color: var(--secondary-color);
+  transition: all .5s ease-in-out ;
+}
+.btn:hover{
+   background-color: var(--primary-color);
+}
+#about {
+  height: 100vh;
+  background-color: #444;
+}
+#navbar{
+  background-color:var(--primary-color);
+   color: #fff;
+  padding: 0rem 3rem;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100vw;
+}
+#navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+#navbar ul a {
+  display: inline-block;
+  padding: 1.2rem 2rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+#navbar ul a:hover {
+  background-color: rgb(253, 6, 47);
+}
+#about .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#about h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+#about p{
+  color:var(--primary-color);
+  font-size:1.5rem;
+}
+#projects {
+  text-align: center;
+  width: 100%;
+  padding: 7rem .1rem;
+  background-color: var(--secondary-color);
+}
+
+#projects .projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 3rem;
+  grid-column-gap: 2rem;
+  margin-top: 2rem;
+}
+
+#projects .container>h1 {
+  font-size: 2.6rem;
+  color: #fff;
+  font-weight: bolder;
+  text-transform: capitalize;
+  margin-bottom: .6rem;
+  line-height: 1.2;
+}
+
+#bottom-line {
+  height: 6px;
+  background-color: #fff;
+  width: 55%;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+#projects .projects .box {
+  background-color: #eee;
+  border: 5px solid #eee;
+  border-radius: 3px;
+}
+
+#projects .projects .box a {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+#projects .projects img{
+  height:200px;
+  width:100%;
+}
+
+#projects .projects .box a p {
+  padding: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+}
+
+
+.code {
+  color: #eee;
+  transition: .5s all ease;
+  font-size: 1.6rem;
+}
+
+#projects .projects .box:hover .code {
+  color: var(--primary-color);
+}
+#contact {
+  height: 80vh;
+  background-color: #444;
+  color: #fff;
+}
+
+#contact .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#contact .container h1 {
+  font-size: 3.4rem;
+  font-weight: bolder;
+  padding-bottom: .1rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+#contact .container p {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+#contact .container .social>div a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #eee;
+  margin: 1rem 2rem;
+  font-weight: bolder;
+  transition: transform .5s;
+}
+
+#contact .container .social>div a:hover {
+  transform: translateY(-5px);
+}
+
+
+/* FOOTER SECTION */
+#main-footer {
+  border-top: solid 4px var(--primary-color);
+  padding: 1rem;
+  background-color: #444;
+  color: #fff;
+}
+
+#main-footer .container {
+  padding: 1rem 0rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#main-footer .container p {
+  font-size: 1.2rem;
+}
+
+
+
+/* SMARTPHONE */
+@media (max-width: 600px) {
+  #navbar {
+    padding: 0rem 1rem;
+    justify-content: center;
+  }
+
+  #projects .projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #contact .container p {
+    margin-bottom: 1.5rem;
+  }
+
+  #contact .container .social>div a {
+    display: block;
+    margin: 1rem 1.5rem;
+  }
+
+  #main-footer .container {
+    flex-direction: column;
+  }
+
+ 
+}
+
+** end of undefined **
+
